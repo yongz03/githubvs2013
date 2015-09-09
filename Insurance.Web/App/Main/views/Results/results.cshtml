@@ -1,0 +1,98 @@
+﻿    <div ng-controller="app.views.results as vm">
+    <h1>Insurance Quote Based On Your Details</h1>
+    <p class="lead">{{insuranceType}}</p>
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>
+                        <span>Name</span>
+                    </th>
+                    <th>
+                        <span>Value</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span>Title</span>
+                    </td>
+                    <td>
+                        <span>{{title}}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>First Name</span>
+                    </td>
+                    <td>
+                        <span>{{firstName}}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Last Name</span>
+                    </td>
+                    <td>
+                        <span>{{lastName}}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Gender</span>
+                    </td>
+                    <td>
+                        <span>{{gender=="M"? "Male" : "Female"}}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Date of birth</span>
+                    </td>
+                    <td>
+                        <span>{{dob}}</span>
+                    </td>
+                </tr>
+                <tr ng-show="isProtect">
+                    <td>
+                        <span>Smoking?</span>
+                    </td>
+                    <td>
+                        <span>{{smoking}}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Insurance type</span>
+                    </td>
+                    <td>
+                        <span>{{insuranceType}}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Cover amount</span>
+                    </td>
+                    <td>
+                        <span>{{coverAmount | currency:"AU$"}}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Premium per fortnight</span>
+                    </td>
+                    <td>
+                        <span ng-if="premium == 0">Your age is out of service.</span>
+                        <span ng-if="premium > 0">{{premium | currency:"AU$"}}</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <button type="submit" class="btn btn-primary" style="margin-left:32%" ng-click="purchase()" ng-disabled="premium==0">Purchase the quote</button>
+        </div>
+    </div>
+</div>

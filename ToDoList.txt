@@ -1,0 +1,5 @@
+1. Add theme to the pages for a uniformed look and feel
+2. Add unit testing to app service project
+3. Add javascripts unit testing for angular controllers, directives and services
+4. Add build and deployment scripts for automated build and deployment with build server(I don't have it at home)
+5. The solution was developed with Browser Chrome. It will be tested in the other required browsers

@@ -1,0 +1,96 @@
+﻿<form name="selectionForm" novalidate>
+    <div ng-controller="app.views.selection as vm">
+        <h1>@L("WellcomeMessage")</h1>
+        <p class="lead">@L("Selection_ThisIsOnlineInsurance")</p>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Please enter your name</h3>
+                <div class="col-md-3">
+                    <label for="title">Title</label>
+                    <select ng-model="title" class="form-control" id="title">
+                        <option value="0">Mr.</option>
+                        <option value="1">Ms.</option>
+                        <option value="2">Miss.</option>
+                        <option value="3">Dr.</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="firstName" class="control-label">
+                        <span>First Name</span>
+                        <span aria-required="true" class="font-red-intense"> * </span>
+                    </label>
+                    <input type="text" name="firstName" class="form-control" id="firstName" ng-model="firstName" ng-required="true" />
+                    <div class="error-container" ng-show="selectionForm.firstName.$dirty && selectionForm.firstName.$invalid">
+                        <small class="error" ng-show="selectionForm.firstName.$error.required"><span>First name field is required</span></small>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="lastName">
+                        <span>Last Name</span>
+                        <span aria-required="true" class="font-red-intense"> * </span>
+                    </label>
+                    <input type="text" name="lastName" class="form-control" id="lastName" ng-model="lastName" ng-required="true" />
+                    <div class="error-container" ng-show="selectionForm.lastName.$dirty && selectionForm.lastName.$invalid">
+                        <small class="error" ng-show="selectionForm.lastName.$error.required"><span>Last name field is required</span></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Please select one of the following insurance and enter the required details</h3>
+                <div class=" col-md-9">
+                    <ul class="nav nav-tabs">
+                        <li ng-class="{'active':tabItem.isActive}" ng-repeat="tabItem in tabItems">
+                            <a ng-click="activateTab(tabItem)">
+                                <span>{{tabItem.text}}</span>
+                            </a>
+                        </li>
+                    </ul><br />
+                    <div class="tab-content form-group">
+                        <label for="gender">
+                            <span>Gender</span>
+                            <span aria-required="true" class="font-red-intense"> * </span>
+                        </label>
+                        <select ng-model="gender" ng-change="calculatePremium()" name="gender" class="form-control" id="gender" ng-required="true">
+                            <option value="0">Male</option>
+                            <option value="1">Female</option>
+                        </select>
+                        <div class="error-container" ng-show="selectionForm.gender.$dirty && selectionForm.gender.$invalid">
+                            <small class="error" ng-show="selectionForm.gender.$error.required"><span>Gender field is required</span></small>
+                        </div>
+                        <br />
+                        <label for="dob">
+                            <span>Date of Birth</span>
+                            <span aria-required="true" class="font-red-intense"> * </span>
+                        </label>
+                        <input type="date" ng-change="calculatePremium()" name="dob" class="form-control" id="dob" ng-model="dob" ng-required="true" />
+                        <div class="error-container" ng-show="selectionForm.dob.$dirty && selectionForm.dob.$invalid">
+                            <small class="error" ng-show="selectionForm.dob.$error.required"><span>Date of birth field is required</span></small>
+                        </div>
+                        <br />
+                        <label for="cover" class="control-label">
+                            <span>Desired Cover Amount (min 1000 max </span><span ng-if="!isProtect">100,000)</span><span ng-if="isProtect">5,000)</span>
+                            <span class="font-red-intense"> * </span>
+                        </label>
+                        <input type="number" ng-change="calculatePremium()" name="cover" id="cover" placeholder="cover amount you want to choose" ng-min="1000" ng-max="maxValue" class="form-control" ng-model="coverAmount" />
+                        <div ng-show="isProtect">
+                            <br />
+                            <label for="smoker">Are you a smoker?</label>
+                            <input type="checkbox" ng-change="calculatePremium()" id="smoker" ng-model="smoking" class="checkbox-sm-16" />
+                        </div>
+                        <div class="error-container" ng-show="selectionForm.cover.$dirty && selectionForm.cover.$invalid">
+                            <small class="error" ng-show="selectionForm.cover.$error.min"><span>Cover amount must be greater than min amount</span></small>
+                            <small class="error" ng-show="selectionForm.cover.$error.max"><span>Cover amount must be less than max amount</span></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button type="submit" class="btn btn-primary" style="margin-left:32%" ng-click="getQuote(this)" ng-disabled="!isFormValid()">Get the quote</button>
+            </div>
+        </div>
+    </div>
+</form>

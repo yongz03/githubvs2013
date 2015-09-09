@@ -8,7 +8,7 @@
                 STORAGE_KEY: 'user_name'
             };
 
-            var rates;
+            var rates={};
             var currentTimeout = null;
             var storageService = localStorageService;
 
@@ -118,7 +118,9 @@
 
             var initialize = function() {
                 $scope.tabItems = [{ text: 'Life Insurance', isActive: true, isProtect: false, maxValue: 100000 }, { text: 'Income Protection', isActive: false, isProtect: true, maxValue: 5000 }];
-                rates = JSON.parse(abp.setting.get("Rates")).rates;
+                var ratesString = abp.setting.get("Rates");
+                var reatesScripts = JSON.parse(ratesString);
+                rates = reatesScripts.rates;
 
                 var tabItem = $scope.tabItems[0];
                 $scope.maxValue = tabItem.maxValue;

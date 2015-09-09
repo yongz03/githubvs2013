@@ -7,15 +7,18 @@ using System.Data.Entity.ModelConfiguration.Configuration;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
-using Abp.EntityFramework;
+using Abp.Zero.EntityFramework;
 using Castle.Core.Internal;
 using Insurance.Attributes;
+using Insurance.Authorization.Roles;
 using Insurance.Customers;
+using Insurance.MultiTenancy;
 using Insurance.Rates;
+using Insurance.Users;
 
 namespace Insurance.EntityFramework
 {
-    public class InsuranceDbContext : AbpDbContext
+    public class InsuranceDbContext : AbpZeroDbContext<Tenant, Role, User>
     {
         //TODO: Define an IDbSet for each Entity...
 

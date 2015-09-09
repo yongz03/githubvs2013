@@ -1,12 +1,12 @@
 ﻿using System.Data.Entity;
 using System.Reflection;
-using Abp.EntityFramework;
 using Abp.Modules;
+using Abp.Zero.EntityFramework;
 using Insurance.EntityFramework;
 
 namespace Insurance
 {
-    [DependsOn(typeof(AbpEntityFrameworkModule), typeof(InsuranceCoreModule))]
+    [DependsOn(typeof(AbpZeroEntityFrameworkModule), typeof(InsuranceCoreModule))]
     public class InsuranceDataModule : AbpModule
     {
         public override void PreInitialize()

@@ -36,15 +36,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Abp">
-      <HintPath>..\packages\Abp.0.6.8.0\lib\net451\Abp.dll</HintPath>
+      <HintPath>..\packages\Abp.0.7.0.4\lib\net451\Abp.dll</HintPath>
     </Reference>
     <Reference Include="Abp.EntityFramework">
-      <HintPath>..\packages\Abp.EntityFramework.0.6.8.0\lib\net451\Abp.EntityFramework.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\Abp.EntityFramework.0.7.0.0\lib\net451\Abp.EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="Abp.TestBase">
       <HintPath>..\packages\Abp.TestBase.0.2.0.0\lib\net451\Abp.TestBase.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="Abp.Zero">
+      <HintPath>..\packages\Abp.Zero.0.7.0.0\lib\net451\Abp.Zero.dll</HintPath>
+    </Reference>
+    <Reference Include="Abp.Zero.EntityFramework">
+      <HintPath>..\packages\Abp.Zero.EntityFramework.0.7.0.0\lib\net451\Abp.Zero.EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="Castle.Core">
       <HintPath>..\packages\Castle.Core.3.3.0\lib\net45\Castle.Core.dll</HintPath>
@@ -68,23 +73,23 @@
     <Reference Include="EntityFramework.SqlServer">
       <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Moq">
       <HintPath>..\packages\Moq.4.2.1507.0118\lib\net40\Moq.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Nito.AsyncEx, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Nito.AsyncEx.3.0.0\lib\net45\Nito.AsyncEx.dll</HintPath>
+    <Reference Include="Nito.AsyncEx">
+      <HintPath>..\packages\Nito.AsyncEx.3.0.1\lib\net45\Nito.AsyncEx.dll</HintPath>
     </Reference>
-    <Reference Include="Nito.AsyncEx.Concurrent, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Nito.AsyncEx.3.0.0\lib\net45\Nito.AsyncEx.Concurrent.dll</HintPath>
+    <Reference Include="Nito.AsyncEx.Concurrent">
+      <HintPath>..\packages\Nito.AsyncEx.3.0.1\lib\net45\Nito.AsyncEx.Concurrent.dll</HintPath>
     </Reference>
     <Reference Include="Nito.AsyncEx.Enlightenment">
-      <HintPath>..\packages\Nito.AsyncEx.3.0.0\lib\net45\Nito.AsyncEx.Enlightenment.dll</HintPath>
+      <HintPath>..\packages\Nito.AsyncEx.3.0.1\lib\net45\Nito.AsyncEx.Enlightenment.dll</HintPath>
     </Reference>
     <Reference Include="NMemory">
       <HintPath>..\packages\NMemory.1.0.1\lib\net45\NMemory.dll</HintPath>

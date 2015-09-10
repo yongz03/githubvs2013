@@ -7779,3 +7779,55 @@ DEBUG 2015-09-08 21:15:53,149 [1    ] Abp.Localization.LocalizationManager     -
 DEBUG 2015-09-08 21:15:53,162 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
 DEBUG 2015-09-08 21:15:53,230 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Insurance
 DEBUG 2015-09-08 21:15:53,230 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-09-09 16:02:41,805 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-09-09 16:02:48,950 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-09-09 16:02:48,960 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-09 16:02:48,964 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-09 16:02:48,964 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-09 16:02:48,964 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-09 16:02:48,964 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-09 16:02:48,964 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-09 16:02:48,965 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Insurance.Application.InsuranceApplicationModule, Insurance.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-09 16:02:48,965 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Insurance.InsuranceCoreModule, Insurance.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-09 16:02:48,965 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Insurance.InsuranceDataModule, Insurance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-09 16:02:48,965 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Insurance.Web.InsuranceWebModule, Insurance.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-09 16:02:48,965 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Insurance.InsuranceWebApiModule, Insurance.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-09 16:02:48,970 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-09-09 16:02:52,369 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 5 classes defines auto mapping attributes
+DEBUG 2015-09-09 16:02:52,369 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Insurance.Customers.Dtos.CustomerDto
+DEBUG 2015-09-09 16:02:54,382 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Insurance.Insurances.Dtos.InsuranceDto
+DEBUG 2015-09-09 16:02:54,457 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Insurance.Insurances.Dtos.LifeInsuranceDto
+DEBUG 2015-09-09 16:02:54,461 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Insurance.Insurances.Dtos.ProtectInsuranceDto
+DEBUG 2015-09-09 16:02:54,464 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Insurance.Rates.Dtos.RateDto
+DEBUG 2015-09-09 16:02:59,263 [1    ] Default                                  - Dynamic web api controller is created for type 'Insurance.Customers.ICustomerAppService' with service name 'app/customer'.
+DEBUG 2015-09-09 16:02:59,270 [1    ] Default                                  - Dynamic web api controller is created for type 'Insurance.Insurances.IInsuranceAppService' with service name 'app/insurance'.
+DEBUG 2015-09-09 16:03:07,148 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-09-09 16:03:07,176 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-09-09 16:03:07,245 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Insurance
+DEBUG 2015-09-09 16:03:07,245 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-09-10 11:58:26,642 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-09-10 11:58:40,110 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-09-10 11:58:40,126 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-10 11:58:40,132 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-10 11:58:40,133 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.6.3.1, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-10 11:58:40,133 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-10 11:58:40,133 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-10 11:58:40,134 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.6.3.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-10 11:58:40,134 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Insurance.Application.InsuranceApplicationModule, Insurance.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-10 11:58:40,134 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Insurance.InsuranceCoreModule, Insurance.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-10 11:58:40,135 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Insurance.InsuranceDataModule, Insurance.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-10 11:58:40,135 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Insurance.Web.InsuranceWebModule, Insurance.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-10 11:58:40,135 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Insurance.InsuranceWebApiModule, Insurance.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-09-10 11:58:40,146 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-09-10 11:58:45,301 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 5 classes defines auto mapping attributes
+DEBUG 2015-09-10 11:58:45,301 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Insurance.Customers.Dtos.CustomerDto
+DEBUG 2015-09-10 11:58:46,614 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Insurance.Insurances.Dtos.InsuranceDto
+DEBUG 2015-09-10 11:58:46,636 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Insurance.Insurances.Dtos.LifeInsuranceDto
+DEBUG 2015-09-10 11:58:46,640 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Insurance.Insurances.Dtos.ProtectInsuranceDto
+DEBUG 2015-09-10 11:58:46,646 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Insurance.Rates.Dtos.RateDto
+DEBUG 2015-09-10 11:58:49,937 [1    ] Default                                  - Dynamic web api controller is created for type 'Insurance.Customers.ICustomerAppService' with service name 'app/customer'.
+DEBUG 2015-09-10 11:58:49,941 [1    ] Default                                  - Dynamic web api controller is created for type 'Insurance.Insurances.IInsuranceAppService' with service name 'app/insurance'.
+DEBUG 2015-09-10 11:58:53,550 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-09-10 11:58:53,564 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-09-10 11:58:53,655 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Insurance
+DEBUG 2015-09-10 11:58:53,656 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb

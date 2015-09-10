@@ -1,5 +1,4 @@
-﻿
-using System.Data.Entity.Migrations;
+﻿using System.Data.Entity.Migrations;
 using System.Linq;
 using Insurance.EntityFramework;
 using Insurance.Customers;
